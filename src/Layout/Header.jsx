@@ -1,5 +1,29 @@
 import { Link } from "react-router-dom";
 
+function scrollToAbout() {
+  const aboutSection = document.getElementById("about");
+
+  if (aboutSection) {
+    aboutSection.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+function scrollToProjects() {
+  const projectsSection = document.getElementById("projects");
+
+  if (projectsSection) {
+    projectsSection.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+function scrollToContact() {
+  const contactSection = document.getElementById("contact");
+
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
 /**
  * Component representing the header of the application.
  * @component
@@ -9,15 +33,23 @@ import { Link } from "react-router-dom";
  */
 export const Header = () => {
   return (
-    <header className="text-center py-4 bg-dark mb-5">
-      <Link className="text-decoration-none mx-5">
-        <span className="text-light">About</span>
+    <header id="top" className="text-center py-4 bg-dark text-light fs-3">
+      <Link className="text-decoration-none mx-5" onClick={scrollToAbout}>
+        <span>About</span>
       </Link>
-      <Link to="/" className="text-decoration-none mx-5">
-        <span className="text-light">Projects</span>
+      <Link
+        to="/"
+        className="text-decoration-none mx-5"
+        onClick={scrollToProjects}
+      >
+        <span>Projects</span>
       </Link>
-      <Link to="/" className="text-decoration-none mx-5">
-        <span className="text-light">Contact</span>
+      <Link
+        to="/"
+        className="text-decoration-none mx-5"
+        onClick={scrollToContact}
+      >
+        <span>Contact</span>
       </Link>
     </header>
   );

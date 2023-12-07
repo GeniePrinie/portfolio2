@@ -11,9 +11,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Skills = () => {
   return (
-    <div className="text-center">
-      <h2>Skills</h2>
-      <div className="d-flex justify-content-center flex-wrap">
+    <div className="text-center pt-5">
+      <h2 className="pb-3">Skills</h2>
+      <div className="d-flex justify-content-center flex-wrap text-dark">
         <FontAwesomeIcon icon={faReact} className="skill-icon m-3" />
         <FontAwesomeIcon icon={faHtml5} className="skill-icon m-3" />
         <FontAwesomeIcon icon={faCss3Alt} className="skill-icon m-3" />

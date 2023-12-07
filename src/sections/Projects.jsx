@@ -3,9 +3,9 @@ import { data } from "../data/projects";
 
 export const Projects = () => {
   return (
-    <div>
+    <div id="projects" className="pt-5">
       <h2>Projects</h2>
-      <p className="text-dark">
+      <p>
         Note: All sites were for my academic coursework at Noroff and were only
         for educational purposes, none of them are real websites.
       </p>

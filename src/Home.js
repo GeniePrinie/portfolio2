@@ -4,6 +4,7 @@ import { About } from "./sections/About";
 import { Contact } from "./sections/Contact";
 import { Projects } from "./sections/Projects";
 import { Skills } from "./sections/Skills";
+import { BackToTop } from "./sections/BackToTop";
 
 export const Home = () => {
   useEffect(() => {
@@ -11,12 +12,15 @@ export const Home = () => {
   }, []);
 
   return (
-    <div className="container">
+    <>
       <Owner />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-    </div>
+      <div className="container">
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </div>
+      <BackToTop />
+    </>
   );
 };
