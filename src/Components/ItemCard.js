@@ -20,11 +20,19 @@ export const ItemCard = (props) => {
             <p className="card-text text-dark badge mt-0 mb-4">{props.title}</p>
             <p className="card-text text-dark my-4">{props.description}</p>
             <div>
-              <Link to={props.repository}>
-                <button className="btn ">View Repository</button>
+              <Link
+                to={props.repository}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btn">View Repository</button>
               </Link>
 
-              <Link to={props.website}>
+              <Link
+                to={props.website}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <button className="btn">View Website</button>
               </Link>
             </div>

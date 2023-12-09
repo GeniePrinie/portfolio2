@@ -16,7 +16,7 @@ export const Owner = () => {
         <div>
           <h1 className="text-center mt-0 text-success">Prinyapon Prinyanut</h1>
           <p className="text-center  mt-4 fs-3 text-primary text-uppercase">
-            A Front-end Developer
+            Front-end Developer
           </p>
         </div>
       </div>
