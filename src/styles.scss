@@ -1,25 +1,112 @@
-$primary: #c30182;
-$secondary: #ffd1dc;
-$info: #cccccc;
-$dark: #333333;
-$light: #ffebf2;
+$primary: #ccf1f2;
+$secondary: #fffadb;
+$success: #ffe426;
+$info: #f2f3f5;
+$dark: #000111;
+$light: #fefefe;
 
 @import "~bootstrap/scss/bootstrap";
 
-// body {
-//   margin: 0;
-//   margin-bottom: 100px;
-//   font-family: "Open Sans", sans-serif;
-//   background-color: #ffd1dc;
-// }
+body {
+  margin: 0;
+  margin-bottom: 100px;
+  font-family: "Open Sans", sans-serif;
+  background-color: $light;
+  color: $dark;
+}
 
-// h1 {
-//   font-family: "Young Serif", serif;
-//   font-size: 60px;
-// }
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 80px;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+}
 
-// h2,
-// h5 {
-//   font-family: "Source Code Pro", monospace;
-//   font-weight: bolder;
-// }
+h2 {
+  font-family: "DM Sans", sans-serif;
+  margin-top: 50px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "DM Sans", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+footer {
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.skill-icon {
+  font-size: 100px;
+  box-shadow: 15px 10px $primary;
+}
+
+.btn {
+  border: 1px solid $dark;
+  border-radius: 0%;
+  background-color: $dark !important;
+  color: $light;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  &:hover {
+    background-color: $success !important;
+    color: $dark;
+  }
+}
+
+.badge {
+  border: 1px solid $success;
+  border-radius: 0%;
+  padding: 5px 15px;
+  background-color: $success !important;
+  margin-bottom: 0;
+}
+
+img {
+  border: none;
+  border-radius: 0%;
+}
+
+.card {
+  box-shadow: 15px 10px $primary;
+  border: 2px solid $dark;
+  border-radius: 2px;
+}
+
+.owner {
+  height: 80vh;
+  background-color: $dark;
+}
+
+footer {
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.about {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+}
+
+.about p {
+  line-height: 2;
+}
