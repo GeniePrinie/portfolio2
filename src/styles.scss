@@ -4,8 +4,21 @@ $success: #ffe426;
 $info: #f2f3f5;
 $dark: #000111;
 $light: #fefefe;
+$danger: #9900ff;
 
 @import "~bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
 
 body {
   margin: 0;
@@ -13,12 +26,14 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: $light;
   color: $dark;
+  min-height: 100vh;
 }
 
 h1 {
   font-family: "DM Serif Display", serif;
   font-size: 80px;
 }
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 40px;
@@ -42,7 +57,10 @@ p {
 
 footer {
   text-transform: uppercase;
-  margin-top: 50px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .skill-icon {
@@ -90,12 +108,6 @@ img {
   background-color: $dark;
 }
 
-footer {
-  text-transform: uppercase;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
 .cursor {
   cursor: pointer;
 }
@@ -109,4 +121,15 @@ footer {
 
 .about p {
   line-height: 2;
+}
+
+.contact {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 60px;
+}
+
+@media screen and (max-width: 880px) {
+  .contact {
+    font-size: 40px;
+  }
 }
