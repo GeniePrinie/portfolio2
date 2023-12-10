@@ -18,7 +18,7 @@ export const ItemCard = (props) => {
               <b>{props.projectName}</b>
             </h3>
             <p className="card-text text-dark badge mt-0 mb-4">{props.title}</p>
-            <p className="card-text text-dark my-4">{props.description}</p>
+            <p className="card-text text-dark my-4 fs-5">{props.description}</p>
             <div>
               <Link
                 to={props.repository}

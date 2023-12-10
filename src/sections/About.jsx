@@ -1,7 +1,7 @@
 export const About = () => {
   return (
     <div id="about" className="pt-5 mt-5 about bg-success">
-      <h2 className="pb-3">About</h2>
+      <h2 className="pb-3 fs-1">About</h2>
       <p className="fs-5">
         Hi, I am Prinyapon Prinyanut. I was born in Bangkok, Thailand, and moved
         on my own to the U.S. when I was 14 years old to attend High School. My

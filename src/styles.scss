@@ -41,75 +41,26 @@ h1 {
 }
 
 h2 {
-  font-family: "DM Sans", sans-serif;
   margin-top: 50px;
   font-weight: bolder;
-  text-transform: uppercase;
 }
 
-h3 {
-  font-family: "DM Sans", sans-serif;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
-}
-
+h3,
 footer {
-  text-transform: uppercase;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  font-family: "DM Serif Display", serif;
 }
 
-.skill-icon {
-  font-size: 100px;
-  box-shadow: 15px 10px $primary;
-}
+.nav-link {
+  transition: transform 0.3s ease;
 
-.btn {
-  border: 1px solid $dark;
-  border-radius: 0%;
-  background-color: $dark !important;
-  color: $light;
-  text-transform: uppercase;
-  padding: 15px 40px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 20px;
   &:hover {
-    background-color: $success !important;
-    color: $dark;
+    transform: scale(1.2);
   }
-}
-
-.badge {
-  border: 1px solid $success;
-  border-radius: 0%;
-  padding: 5px 15px;
-  background-color: $success !important;
-  margin-bottom: 0;
-}
-
-img {
-  border: none;
-  border-radius: 0%;
-}
-
-.card {
-  box-shadow: 15px 10px $primary;
-  border: 2px solid $dark;
-  border-radius: 2px;
 }
 
 .owner {
   height: 80vh;
   background-color: $dark;
-}
-
-.cursor {
-  cursor: pointer;
 }
 
 .about {
@@ -123,13 +74,102 @@ img {
   line-height: 2;
 }
 
+.about h2 {
+  font-family: "Petit Formal Script", sans-serif;
+}
+
+.skills h2 {
+  font-family: "Pirata One", sans-serif;
+  letter-spacing: 2px;
+  transform: scaleX(1.3);
+}
+
+.projects h2 {
+  font-family: "Shrikhand", sans-serif;
+  letter-spacing: 2.5px;
+  transform: scaleY(1.3);
+  color: $danger;
+}
+
 .contact {
   font-family: "Press Start 2P", sans-serif;
+  transform: scaleY(1.3);
   font-size: 60px;
 }
 
 @media screen and (max-width: 880px) {
   .contact {
     font-size: 40px;
+  }
+}
+
+footer {
+  letter-spacing: 2px;
+  color: $primary;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.cursor {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.skill-icon {
+  font-size: 100px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    box-shadow: 15px 10px $primary;
+    transform: scale(1.2);
+  }
+}
+
+.btn {
+  border: 1px solid $dark;
+  border-radius: 0%;
+  background-color: $dark !important;
+  color: $light;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+  &:hover {
+    background-color: $success !important;
+    color: $dark;
+  }
+}
+
+.badge {
+  border: 1px solid $success;
+  border-radius: 0%;
+  padding: 5px 15px;
+  background-color: $success !important;
+  margin-bottom: 0;
+  letter-spacing: 1.5px;
+}
+
+img {
+  border: none;
+  border-radius: 0%;
+}
+
+.card {
+  box-shadow: 15px 10px $primary;
+  border: 2px solid $dark;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
