@@ -11,7 +11,7 @@ function scrollToTop() {
 
 export const BackToTop = () => {
   return (
-    <div className="pt-5 mt-5 text-center bg-dark">
+    <div className="pt-5 pb-0 mt-5 mb-0 text-center bg-dark">
       <FontAwesomeIcon
         icon={faCircleChevronUp}
         onClick={scrollToTop}

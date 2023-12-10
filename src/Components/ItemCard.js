@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const ItemCard = (props) => {
   return (
-    <div className="my-5 ">
+    <div className="my-5 px-0">
       <div className="card d-flex flex-lg-row-reverse bg-secondary">
         <div className="col-lg-6 d-flex">
           <img
@@ -18,7 +18,7 @@ export const ItemCard = (props) => {
               <b>{props.projectName}</b>
             </h3>
             <p className="card-text text-dark badge mt-0 mb-4">{props.title}</p>
-            <p className="card-text text-dark my-4">{props.description}</p>
+            <p className="card-text text-dark my-4 fs-5">{props.description}</p>
             <div>
               <Link
                 to={props.repository}

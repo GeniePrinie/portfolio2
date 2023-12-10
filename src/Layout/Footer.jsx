@@ -7,7 +7,7 @@
  */
 export const Footer = () => {
   return (
-    <footer className="footer py-3 text-center bg-dark text-light ">
+    <footer className="py-3 fs-4 text-center bg-dark text-light d-flex justify-content-center align-items-center">
       Designed and created by Prinyapon Prinyanut 2023
     </footer>
   );

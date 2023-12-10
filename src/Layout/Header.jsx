@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function scrollToAbout() {
   const aboutSection = document.getElementById("about");
@@ -33,24 +33,30 @@ function scrollToContact() {
  */
 export const Header = () => {
   return (
-    <header id="top" className="text-center py-4 bg-dark text-light fs-3">
-      <Link className="text-decoration-none mx-5" onClick={scrollToAbout}>
-        <span>About</span>
-      </Link>
-      <Link
+    <header
+      id="top"
+      className="d-flex justify-content-center py-4 bg-dark text-primary fs-3"
+    >
+      <NavLink
+        className="text-decoration-none mx-5 nav-link"
+        onClick={scrollToAbout}
+      >
+        About
+      </NavLink>
+      <NavLink
         to="/"
-        className="text-decoration-none mx-5"
+        className="text-decoration-none mx-5 nav-link"
         onClick={scrollToProjects}
       >
-        <span>Projects</span>
-      </Link>
-      <Link
+        Projects
+      </NavLink>
+      <NavLink
         to="/"
-        className="text-decoration-none mx-5"
+        className="text-decoration-none mx-5 nav-link"
         onClick={scrollToContact}
       >
-        <span>Contact</span>
-      </Link>
+        Contact
+      </NavLink>
     </header>
   );
 };
