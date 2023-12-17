@@ -14,12 +14,12 @@ export const Home = () => {
   return (
     <>
       <Owner />
-      <div className="container">
+      <main className="container">
         <About />
         <Skills />
         <Projects />
         <Contact />
-      </div>
+      </main>
       <BackToTop />
     </>
   );
