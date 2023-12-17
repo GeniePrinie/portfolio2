@@ -1,7 +1,6 @@
 $primary: #ccf1f2;
 $secondary: #fffadb;
 $success: #ffe426;
-$info: #f2f3f5;
 $dark: #000111;
 $light: #fefefe;
 $danger: #9900ff;
@@ -18,6 +17,7 @@ html {
   margin: 0;
   padding: 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 body {
@@ -27,6 +27,7 @@ body {
   background-color: $light;
   color: $dark;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -37,6 +38,16 @@ h1 {
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 40px;
+  }
+  .nav-link {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .btn,
+  body {
+    font-size: 13px;
   }
 }
 
@@ -134,7 +145,7 @@ footer {
 .btn {
   border: 1px solid $dark;
   border-radius: 0%;
-  background-color: $dark !important;
+  background-color: $dark;
   color: $light;
   text-transform: uppercase;
   padding: 15px 40px;
@@ -144,7 +155,7 @@ footer {
   letter-spacing: 1.5px;
   font-weight: bolder;
   &:hover {
-    background-color: $success !important;
+    background-color: $success;
     color: $dark;
   }
 }
@@ -153,7 +164,7 @@ footer {
   border: 1px solid $success;
   border-radius: 0%;
   padding: 5px 15px;
-  background-color: $success !important;
+  background-color: $success;
   margin-bottom: 0;
   letter-spacing: 1.5px;
 }

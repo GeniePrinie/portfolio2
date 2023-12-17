@@ -38,21 +38,21 @@ export const Header = () => {
       className="d-flex justify-content-center py-4 bg-dark text-primary fs-3"
     >
       <NavLink
-        className="text-decoration-none mx-5 nav-link"
+        className="text-decoration-none nav-link"
         onClick={scrollToAbout}
       >
         About
       </NavLink>
       <NavLink
         to="/"
-        className="text-decoration-none mx-5 nav-link"
+        className="text-decoration-none mx-4 nav-link"
         onClick={scrollToProjects}
       >
         Projects
       </NavLink>
       <NavLink
         to="/"
-        className="text-decoration-none mx-5 nav-link"
+        className="text-decoration-none nav-link"
         onClick={scrollToContact}
       >
         Contact
